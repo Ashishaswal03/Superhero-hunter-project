@@ -67,7 +67,7 @@ async function showHerosList() {
           <h5 class="card-title">${element.name}</h5>
          
       <a href="myhero.html"  class="btn btn-primary listButton" onclick="seeMore(${element.id})">See More</a>
-      <a data-href="favourites.html"  id="favourite-button" class="btn btn-primary listButton" target="_blank" onclick="addFavourite(${element.id})">Add to Favourite</a>
+      <a data-href="fav.html"  id="favourite-button" class="btn btn-primary listButton" target="_blank" onclick="addFavourite(${element.id})">Add to Favourite</a>
         
         </div>
       </div>
@@ -105,8 +105,8 @@ button.addEventListener("click", (getResult = async () => {
         }" class="card-img-top" alt="hero image">
     <div class="card-body">
       <h5 class="card-title">${element.name}</h5>
-      <a href="myHero.html" class="btn btn-primary" onclick="seeMore(${element.id})">See More</a>
-       <a data-href="favourites.html"  id="favourite-button" class="btn btn-primary" target="_blank" onclick="addFavourite(${element.id})">Add to Favourite</a>
+      <a href="myhero.html" class="btn btn-primary" onclick="seeMore(${element.id})">See More</a>
+       <a data-href="fav.html"  id="favourite-button" class="btn btn-primary" target="_blank" onclick="addFavourite(${element.id})">Add to Favourite</a>
        
     
     </div>
