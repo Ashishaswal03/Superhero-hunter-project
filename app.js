@@ -6,18 +6,10 @@ let searchCon=document.querySelector('.search-con')
 
 
 let date= new Date();
-console.log(date.getTime());
-
-// searchForm.addEventListener('submit',(()=>{
-//   e.preventDefault();
-//   var searchText = searchBar.value;
-// }))
-
 
 
 let Publickey='bd8a480bb63717eac29838a47c5f2998';
 let ts=1698548552704;
-// let privateKey='06564aeae70c3244ef987e8dd2ca49458b636446'
 let hashVal="01807d81421a0613f90626adb9289d07";
 
 const [timestamp, apikey, hashValue] = [ts, Publickey, hashVal];
@@ -74,7 +66,7 @@ async function showHerosList() {
         <div class="card-body ">
           <h5 class="card-title">${element.name}</h5>
          
-      <a href="myHero.html"  class="btn btn-primary listButton" onclick="seeMore(${element.id})">See More</a>
+      <a href="myhero.html"  class="btn btn-primary listButton" onclick="seeMore(${element.id})">See More</a>
       <a data-href="favourites.html"  id="favourite-button" class="btn btn-primary listButton" target="_blank" onclick="addFavourite(${element.id})">Add to Favourite</a>
         
         </div>
